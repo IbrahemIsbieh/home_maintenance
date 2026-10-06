@@ -1,0 +1,19 @@
+<odoo>
+    <menuitem id="menu_home_maintenance_root" name="Home Maintenance" sequence="10"/>
+
+    <menuitem id="menu_home_request" name="Requests"
+              parent="menu_home_maintenance_root"
+              action="action_home_request" sequence="5"/>
+
+    <menuitem id="menu_home_property" name="Properties"
+              parent="menu_home_maintenance_root"
+              action="action_home_property" sequence="10"/>
+
+    <menuitem id="menu_home_visit" name="Visits"
+              parent="menu_home_maintenance_root"
+              action="action_home_visit" sequence="8"/>
+    <menuitem id="menu_home_slot" name="Available Slots"
+              parent="menu_home_maintenance_root"
+              action="action_home_slot" sequence="9"
+              groups="home_maintenance.group_home_manager"/>
+</odoo>

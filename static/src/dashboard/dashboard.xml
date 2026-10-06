@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="home_maintenance.Dashboard">
+        <div class="o_home_dashboard p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="m-0">Home Maintenance Dashboard</h2>
+                <button class="btn btn-primary" t-on-click="loadData">Refresh</button>
+            </div>
+
+            <div class="row">
+                <t t-foreach="states" t-as="s" t-key="s.key">
+                    <div class="col-6 col-md-4 col-lg mb-3">
+                        <div class="card text-center shadow-sm"
+                             style="cursor: pointer;"
+                             t-on-click="() => this.openRequests(s.key, s.label)">
+                            <div t-attf-class="card-header text-bg-#{s.color}">
+                                <t t-esc="s.label"/>
+                            </div>
+                            <div class="card-body">
+                                <span class="display-5 fw-bold">
+                                    <t t-esc="state.counts[s.key] ?? 0"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+                <div class="col-6 col-md-4 col-lg mb-3">
+                    <div class="card text-center shadow-sm border-danger"
+                         style="cursor: pointer;"
+                         t-on-click="openUrgent">
+                        <div class="card-header text-bg-danger">
+                            Urgent
+                        </div>
+                        <div class="card-body">
+                            <span class="display-5 fw-bold text-danger">
+                                <t t-esc="state.urgent"/>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h4 class="mt-4">Upcoming Visits</h4>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Request</th>
+                        <th>Technician</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="state.visits" t-as="v" t-key="v.id">
+                        <tr>
+                            <td><t t-esc="v.visit_date"/></td>
+                            <td><t t-esc="v.request_id[1]"/></td>
+                            <td><t t-esc="v.technician_id[1]"/></td>
+                        </tr>
+                    </t>
+                    <tr t-if="!state.visits.length">
+                        <td colspan="3" class="text-muted text-center">No upcoming visits</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </t>
+</templates>

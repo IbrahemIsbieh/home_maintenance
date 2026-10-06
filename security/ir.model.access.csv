@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_home_property_user,home.property.user,model_home_property,home_maintenance.group_home_user,1,0,0,0
+access_home_property_technician,home.property.technician,model_home_property,home_maintenance.group_home_technician,1,0,0,0
+access_home_property_manager,home.property.manager,model_home_property,home_maintenance.group_home_manager,1,1,1,1
+access_home_request_user,home.request.user,model_home_request,home_maintenance.group_home_user,1,0,1,0
+access_home_request_technician,home.request.technician,model_home_request,home_maintenance.group_home_technician,1,1,0,0
+access_home_request_manager,home.request.manager,model_home_request,home_maintenance.group_home_manager,1,1,1,1
+access_home_visit_technician,home.visit.technician,model_home_visit,home_maintenance.group_home_technician,1,1,0,0
+access_home_visit_manager,home.visit.manager,model_home_visit,home_maintenance.group_home_manager,1,1,1,1
+access_home_cancel_wizard_manager,home.request.cancel.wizard.manager,model_home_request_cancel_wizard,home_maintenance.group_home_manager,1,1,1,1
+access_home_schedule_wizard_manager,home.request.schedule.wizard.manager,model_home_request_schedule_wizard,home_maintenance.group_home_manager,1,1,1,1
+access_home_slot_user,home.slot.user,model_home_slot,home_maintenance.group_home_user,1,0,0,0
+access_home_slot_technician,home.slot.technician,model_home_slot,home_maintenance.group_home_technician,1,0,0,0
+access_home_slot_manager,home.slot.manager,model_home_slot,home_maintenance.group_home_manager,1,1,1,1

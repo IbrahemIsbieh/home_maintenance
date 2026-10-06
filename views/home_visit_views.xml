@@ -1,0 +1,65 @@
+<odoo>
+    <record id="view_home_visit_list" model="ir.ui.view">
+        <field name="name">home.visit.list</field>
+        <field name="model">home.visit</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="visit_date"/>
+                <field name="request_id"/>
+                <field name="property_id"/>
+                <field name="technician_id"/>
+                <field name="duration" widget="float_time"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_home_visit_form" model="ir.ui.view">
+        <field name="name">home.visit.form</field>
+        <field name="model">home.visit</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_done" string="Mark Done" type="object"
+                            class="btn-primary" invisible="state != 'planned'"/>
+                    <button name="action_cancel" string="Cancel" type="object"
+                            invisible="state != 'planned'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="request_id"/>
+                            <field name="property_id"/>
+                        </group>
+                        <group>
+                            <field name="technician_id"/>
+                            <field name="visit_date"/>
+                            <field name="duration" widget="float_time"/>
+                        </group>
+                    </group>
+                    <field name="notes" placeholder="Notes..."/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_home_visit_calendar" model="ir.ui.view">
+        <field name="name">home.visit.calendar</field>
+        <field name="model">home.visit</field>
+        <field name="arch" type="xml">
+            <calendar string="Visits" date_start="visit_date"
+                      date_delay="duration" color="technician_id" mode="week">
+                <field name="request_id"/>
+                <field name="technician_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="action_home_visit" model="ir.actions.act_window">
+        <field name="name">Visits</field>
+        <field name="res_model">home.visit</field>
+        <field name="view_mode">calendar,list,form</field>
+    </record>
+</odoo>

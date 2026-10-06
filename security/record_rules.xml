@@ -1,0 +1,58 @@
+<odoo>
+    <!-- الطلبات -->
+    <record id="rule_home_request_technician" model="ir.rule">
+        <field name="name">Technician: assigned requests only</field>
+        <field name="model_id" ref="model_home_request"/>
+        <field name="domain_force">[('technician_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_home_technician'))]"/>
+    </record>
+
+    <record id="rule_home_request_manager" model="ir.rule">
+        <field name="name">Manager: all requests</field>
+        <field name="model_id" ref="model_home_request"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_home_manager'))]"/>
+    </record>
+
+    <!-- الزيارات -->
+    <record id="rule_home_visit_technician" model="ir.rule">
+        <field name="name">Technician: own visits only</field>
+        <field name="model_id" ref="model_home_visit"/>
+        <field name="domain_force">[('technician_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_home_technician'))]"/>
+    </record>
+
+    <record id="rule_home_visit_manager" model="ir.rule">
+        <field name="name">Manager: all visits</field>
+        <field name="model_id" ref="model_home_visit"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_home_manager'))]"/>
+    </record>
+    <record id="rule_home_request_user" model="ir.rule">
+        <field name="name">User: own submitted requests only</field>
+        <field name="model_id" ref="model_home_request"/>
+        <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_home_user'))]"/>
+    </record>
+        <!-- الخانات -->
+    <record id="rule_home_slot_user" model="ir.rule">
+        <field name="name">User: free slots or own booked slot</field>
+        <field name="model_id" ref="model_home_slot"/>
+        <field name="domain_force">['|', ('state', '=', 'free'), ('request_ids.create_uid', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_home_user'))]"/>
+    </record>
+
+    <record id="rule_home_slot_technician" model="ir.rule">
+        <field name="name">Technician: own slots</field>
+        <field name="model_id" ref="model_home_slot"/>
+        <field name="domain_force">[('technician_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_home_technician'))]"/>
+    </record>
+
+    <record id="rule_home_slot_manager" model="ir.rule">
+        <field name="name">Manager: all slots</field>
+        <field name="model_id" ref="model_home_slot"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_home_manager'))]"/>
+    </record>
+</odoo>

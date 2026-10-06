@@ -1,0 +1,27 @@
+<odoo>
+    <record id="module_category_home_maintenance" model="ir.module.category">
+        <field name="name">Home Maintenance</field>
+        <field name="sequence">50</field>
+    </record>
+
+    <record id="privilege_home_maintenance" model="res.groups.privilege">
+        <field name="name">Home Maintenance</field>
+        <field name="category_id" ref="module_category_home_maintenance"/>
+    </record>
+
+    <record id="group_home_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="privilege_id" ref="privilege_home_maintenance"/>
+    </record>
+
+    <record id="group_home_technician" model="res.groups">
+        <field name="name">Technician</field>
+        <field name="privilege_id" ref="privilege_home_maintenance"/>
+    </record>
+
+    <record id="group_home_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="privilege_id" ref="privilege_home_maintenance"/>
+        <field name="user_ids" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+</odoo>

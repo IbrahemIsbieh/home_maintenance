@@ -1,0 +1,10 @@
+<odoo>
+    <record id="action_home_dashboard" model="ir.actions.client">
+        <field name="name">Dashboard</field>
+        <field name="tag">home_maintenance.dashboard</field>
+    </record>
+
+    <menuitem id="menu_home_dashboard" name="Dashboard"
+              parent="menu_home_maintenance_root"
+              action="action_home_dashboard" sequence="1"/>
+</odoo>

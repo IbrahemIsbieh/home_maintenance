@@ -1,0 +1,582 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * home_maintenance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 09:39+0000\n"
+"PO-Revision-Date: 2026-10-06 09:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_needaction
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_needaction
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_property__property_type__apartment
+msgid "Apartment"
+msgstr "شقة"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__slot_id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__slot_id
+msgid "Appointment Slot"
+msgstr "موعد الحجز"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__area
+msgid "Area"
+msgstr "المساحة"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_attachment_count
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_attachment_count
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: home_maintenance
+#: model:ir.model,name:home_maintenance.model_home_slot
+msgid "Available Slot"
+msgstr "موعد متاح"
+
+#. module: home_maintenance
+#: model:ir.actions.act_window,name:home_maintenance.action_home_slot
+#: model:ir.ui.menu,name:home_maintenance.menu_home_slot
+msgid "Available Slots"
+msgstr "المواعيد المتاحة"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_slot__state__booked
+msgid "Booked"
+msgstr "محجوز"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_visit_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: home_maintenance
+#: model:ir.actions.act_window,name:home_maintenance.action_home_request_cancel_wizard
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_cancel_wizard_form
+msgid "Cancel Request"
+msgstr "إلغاء الطلب"
+
+#. module: home_maintenance
+#: model:ir.model,name:home_maintenance.model_home_request_cancel_wizard
+msgid "Cancel Request Wizard"
+msgstr "معالج إلغاء الطلب"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__cancel_reason
+msgid "Cancellation Reason"
+msgstr "سبب الإلغاء"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__state__cancelled
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_visit__state__cancelled
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__city
+msgid "City"
+msgstr "المدينة"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_cancel_wizard_form
+msgid "Confirm Cancellation"
+msgstr "تأكيد الإلغاء"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__create_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__create_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__create_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__create_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__create_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__create_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__create_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__create_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__create_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__create_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: home_maintenance
+#: model:ir.actions.client,name:home_maintenance.action_home_dashboard
+#: model:ir.ui.menu,name:home_maintenance.menu_home_dashboard
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+msgid "Describe the problem..."
+msgstr "صف المشكلة..."
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__description
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_cancel_wizard_form
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_schedule_wizard_form
+msgid "Discard"
+msgstr "تجاهل"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__display_name
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__display_name
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__display_name
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__display_name
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__display_name
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__state__done
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_visit__state__done
+msgid "Done"
+msgstr "تم"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__duration
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__duration
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__duration
+msgid "Duration (hours)"
+msgstr "المدة (بالساعات)"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_follower_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_follower_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_partner_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_partner_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (جهات الاتصال)"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_slot__state__free
+msgid "Free"
+msgstr "متاح"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__has_message
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__has_message
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__priority__2
+msgid "High"
+msgstr "عالية"
+
+#. module: home_maintenance
+#: model:ir.module.category,name:home_maintenance.module_category_home_maintenance
+#: model:ir.ui.menu,name:home_maintenance.menu_home_maintenance_root
+#: model:res.groups.privilege,name:home_maintenance.privilege_home_maintenance
+msgid "Home Maintenance"
+msgstr "صيانة المنازل"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+msgid "Home Maintenance Dashboard"
+msgstr "لوحة معلومات صيانة المنازل"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__name
+msgid "Home Property Name"
+msgstr "اسم العقار"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: home_maintenance
+#: model:ir.model.fields,help:home_maintenance.field_home_property__message_needaction
+#: model:ir.model.fields,help:home_maintenance.field_home_request__message_needaction
+#: model:ir.model.fields,help:home_maintenance.field_home_visit__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديده، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: home_maintenance
+#: model:ir.model.fields,help:home_maintenance.field_home_property__message_has_error
+#: model:ir.model.fields,help:home_maintenance.field_home_request__message_has_error
+#: model:ir.model.fields,help:home_maintenance.field_home_visit__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده، فإن بعض الرسائل تحتوي على خطأ في التسليم."
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__state__in_progress
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_is_follower
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_is_follower
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__write_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__write_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__write_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__write_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__write_uid
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__write_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__write_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__write_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__write_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__write_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__priority__0
+msgid "Low"
+msgstr "منخفضة"
+
+#. module: home_maintenance
+#: model:ir.model,name:home_maintenance.model_home_request
+msgid "Maintenance Request"
+msgstr "طلب صيانة"
+
+#. module: home_maintenance
+#: model:ir.actions.act_window,name:home_maintenance.action_home_request
+msgid "Maintenance Requests"
+msgstr "طلبات الصيانة"
+
+#. module: home_maintenance
+#: model:res.groups,name:home_maintenance.group_home_manager
+msgid "Manager"
+msgstr "مدير"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_visit_form
+msgid "Mark Done"
+msgstr "تحديد كمكتمل"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_has_error
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_has_error
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__state__new
+msgid "New"
+msgstr "جديد"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+msgid "No upcoming visits"
+msgstr "لا توجد زيارات قادمة"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__priority__1
+msgid "Normal"
+msgstr "عادية"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__notes
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__notes
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_property_form
+msgid "Notes.."
+msgstr "ملاحظات.."
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_visit_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_needaction_counter
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_needaction_counter
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__message_has_error_counter
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__message_has_error_counter
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: home_maintenance
+#: model:ir.model.fields,help:home_maintenance.field_home_property__message_needaction_counter
+#: model:ir.model.fields,help:home_maintenance.field_home_request__message_needaction_counter
+#: model:ir.model.fields,help:home_maintenance.field_home_visit__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: home_maintenance
+#: model:ir.model.fields,help:home_maintenance.field_home_property__message_has_error_counter
+#: model:ir.model.fields,help:home_maintenance.field_home_request__message_has_error_counter
+#: model:ir.model.fields,help:home_maintenance.field_home_visit__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_property__property_type__office
+msgid "Office"
+msgstr "مكتب"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__partner_id
+msgid "Owner"
+msgstr "المالك"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__partner_id
+msgid "Partner"
+msgstr "جهة الاتصال"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_visit__state__planned
+msgid "Planned"
+msgstr "مخطط"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__priority
+msgid "Priority"
+msgstr "الأولوية"
+
+#. module: home_maintenance
+#: model:ir.ui.menu,name:home_maintenance.menu_home_property
+msgid "Properties"
+msgstr "العقارات"
+
+#. module: home_maintenance
+#: model:ir.actions.act_window,name:home_maintenance.action_home_property
+#: model:ir.model,name:home_maintenance.model_home_property
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__property_id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__property_id
+msgid "Property"
+msgstr "العقار"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__property_type
+msgid "Property Type"
+msgstr "نوع العقار"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+msgid "Refresh"
+msgstr "تحديث"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_cancel_wizard__request_id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__request_id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__request_id
+msgid "Request"
+msgstr "الطلب"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__name
+msgid "Request Name"
+msgstr "اسم الطلب"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__title
+msgid "Request Title"
+msgstr "عنوان الطلب"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__request_ids
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__request_ids
+#: model:ir.ui.menu,name:home_maintenance.menu_home_request
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_property_form
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_slot_form
+msgid "Requests"
+msgstr "الطلبات"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__request_count
+msgid "Requests Count"
+msgstr "عدد الطلبات"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+msgid "Reset to New"
+msgstr "إعادة إلى جديد"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_schedule_wizard_form
+msgid "Schedule"
+msgstr "جدولة"
+
+#. module: home_maintenance
+#: model:ir.actions.act_window,name:home_maintenance.action_home_request_schedule_wizard
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_schedule_wizard_form
+msgid "Schedule Visit"
+msgstr "جدولة زيارة"
+
+#. module: home_maintenance
+#: model:ir.model,name:home_maintenance.model_home_request_schedule_wizard
+msgid "Schedule Visit Wizard"
+msgstr "معالج جدولة الزيارة"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__state__scheduled
+msgid "Scheduled"
+msgstr "مجدول"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__slot_start
+msgid "Start"
+msgstr "البداية"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+msgid "Start Work"
+msgstr "بدء العمل"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__state
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__state
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_property__street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__technician_id
+msgid "Technical"
+msgstr "الفني"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__technician_id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_slot__technician_id
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__technician_id
+#: model:res.groups,name:home_maintenance.group_home_technician
+msgid "Technician"
+msgstr "الفني"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+msgid "Upcoming Visits"
+msgstr "الزيارات القادمة"
+
+#. module: home_maintenance
+#. odoo-javascript
+#: code:addons/home_maintenance/static/src/dashboard/dashboard.xml:0
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_request__priority__3
+msgid "Urgent"
+msgstr "عاجلة"
+
+#. module: home_maintenance
+#: model:res.groups,name:home_maintenance.group_home_user
+msgid "User"
+msgstr "مستخدم"
+
+#. module: home_maintenance
+#: model:ir.model.fields.selection,name:home_maintenance.selection__home_property__property_type__villa
+msgid "Villa"
+msgstr "فيلا"
+
+#. module: home_maintenance
+#: model:ir.model,name:home_maintenance.model_home_visit
+msgid "Visit"
+msgstr "زيارة"
+
+#. module: home_maintenance
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request_schedule_wizard__visit_date
+#: model:ir.model.fields,field_description:home_maintenance.field_home_visit__visit_date
+msgid "Visit Date"
+msgstr "تاريخ الزيارة"
+
+#. module: home_maintenance
+#: model:ir.actions.act_window,name:home_maintenance.action_home_visit
+#: model:ir.model.fields,field_description:home_maintenance.field_home_request__visit_ids
+#: model:ir.ui.menu,name:home_maintenance.menu_home_visit
+#: model_terms:ir.ui.view,arch_db:home_maintenance.home_request_form
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_visit_calendar
+msgid "Visits"
+msgstr "الزيارات"
+
+#. module: home_maintenance
+#: model_terms:ir.ui.view,arch_db:home_maintenance.view_home_request_cancel_wizard_form
+msgid "Why is this request being cancelled?"
+msgstr "لماذا يتم إلغاء هذا الطلب؟"

@@ -1,0 +1,65 @@
+<odoo>
+    <record id="home_property_list" model="ir.ui.view">
+        <field name="name">home_property_list</field>
+        <field name="model">home.property</field>
+        <field name="arch" type="xml">
+            <list>
+                 <field name="name"/>
+                 <field name="partner_id"/>
+                 <field name="property_type"/>
+                 <field name="city"/>
+                 <field name="area"/>
+            </list>
+        </field>
+    </record>
+    <record id="home_property_form" model="ir.ui.view">
+        <field name="name">home_property_form</field>
+        <field name="model">home.property</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+
+                        <button name="action_view_requests" type="object"
+                                class="oe_stat_button" icon="fa-wrench">
+                            <field name="request_count" widget="statinfo" string="Requests"/>
+                        </button>
+                    </div>
+                    <group>
+                         <group>
+                             <field name="name"/>
+                             <field name="partner_id"/>
+                             <field name="property_type"/>
+                         </group>
+                         <group>
+                             <field name="street"/>
+                             <field name="city"/>
+                             <field name="area"/>
+                         </group>
+                    </group>
+                    <field name="notes" placeholder="Notes.."/>
+                    <notebook>
+                        <page string="Requests">
+                             <field name="request_ids">
+                                  <list>
+                                      <field name="name"/>
+                                      <field name="title"/>
+                                      <field name="priority"/>
+                                      <field name="state" widget="badge"/>
+                                  </list>
+                             </field>
+                        </page>
+                    </notebook>
+
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="action_home_property" model="ir.actions.act_window">
+        <field name="name">Property</field>
+        <field name="res_model">home.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>
