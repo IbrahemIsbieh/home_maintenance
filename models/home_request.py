@@ -66,3 +66,17 @@ class HomeRequest(models.Model):
                 ])
                 if others:
                     raise ValidationError("This slot is already booked.")
+
+    def write(self, vals):
+        old_states = {rec.id: rec.state for rec in self}
+        res = super().write(vals)
+        if 'state' in vals:
+            template = self.env.ref('home_maintenance.mail_template_request_state',
+                                    raise_if_not_found=False)
+            for rec in self:
+                if (template
+                        and rec.partner_id.email
+                        and old_states.get(rec.id) != rec.state
+                        and rec.state in ('scheduled', 'done', 'cancelled')):
+                    template.sudo().send_mail(rec.id)
+        return res

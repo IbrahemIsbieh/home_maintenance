@@ -1,0 +1,27 @@
+<odoo>
+    <record id="mail_template_request_state" model="mail.template">
+        <field name="name">Home Maintenance: Request Status Update</field>
+        <field name="model_id" ref="model_home_request"/>
+        <field name="subject">Update on your maintenance request {{ object.name }}</field>
+        <field name="partner_to">{{ object.partner_id.id }}</field>
+        <field name="auto_delete" eval="True"/>
+        <field name="body_html" type="html">
+<div style="font-family: Arial, sans-serif; font-size: 14px;">
+    <p>Hello <t t-out="object.partner_id.name or ''"/>,</p>
+    <p>
+        Your maintenance request <strong t-out="object.name"/>
+        (<t t-out="object.title or ''"/>)
+        for the property <t t-out="object.property_id.name or ''"/>
+        is now <strong t-out="object.state.replace('_', ' ').title()"/>.
+    </p>
+    <t t-if="object.state == 'cancelled' and object.cancel_reason">
+        <p>Reason: <t t-out="object.cancel_reason"/></p>
+    </t>
+    <t t-if="object.technician_id">
+        <p>Assigned technician: <t t-out="object.technician_id.name"/></p>
+    </t>
+    <p>Thank you.</p>
+</div>
+        </field>
+    </record>
+</odoo>
